@@ -37,7 +37,7 @@ const CheckoutAlbum = ({ cart, onClearCart }) => {
       <div className="checkout-success">
         <h2>Your Order Placed Successfully</h2>
         <p>
-          Thank you, {formData.name}. A confirmation email will be sent to{" "}
+          Thank you, {formData.fullName}. A confirmation email will be sent to{" "}
           {formData.email}.
         </p>
         <Link className="btn btn-primary" to="/">
