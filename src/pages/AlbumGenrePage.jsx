@@ -33,9 +33,9 @@ const AlbumGenrePage = ({ albums, OnAddToCart }) => {
           <h1 className="detail-title">{album.name}</h1>
           <p className="detail-price">{album.price.toFixed(2)}</p>
           <p className="detail-desc">{album.description}</p>
-          <p className="detail-catalogNumber">{album.catalogNumber}</p>
-          <p className="detail-weight">{album.weight}</p>
-          <p className="detail-speed">{album.speed}</p>
+          <p className="detail-catalogNumber">{album.specs.catalogNumber}</p>
+          <p className="detail-weight">{album.specs.weight}</p>
+          <p className="detail-speed">{album.specs.speed}</p>
           <div className="stock-tag">
             {album.stock > 0
               ? `✔️ In Stock (${album.stock} units available)`
