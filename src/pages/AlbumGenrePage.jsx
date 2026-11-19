@@ -22,15 +22,16 @@ const AlbumGenrePage = ({ albums, OnAddToCart }) => {
   return (
     <div className="detail-container">
       <nav className="breadcrumb">
-        <Link to="/">Catalog</Link> &gt; <span>{album.name}</span>
+        <Link to="/">Catalog</Link> &gt; <span>{album.title}</span>
       </nav>
 
       <div className="detail-grid">
-        <img src={album.image} alt={album.name} className="detail-img" />
+        <img src={album.image} alt={album.title} className="detail-img" />
 
         <div className="detail-info">
           <span className="album-genre">{album.genre}</span>
-          <h1 className="detail-title">{album.name}</h1>
+          <h1 className="detail-title">{album.title}</h1>
+          <p className="detail-artist">{album.artist}</p>
           <p className="detail-price">{album.price.toFixed(2)}</p>
           <p className="detail-desc">{album.description}</p>
           <p className="detail-catalogNumber">{album.specs.catalogNumber}</p>
