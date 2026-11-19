@@ -17,7 +17,7 @@ const AlbumCard = ({ album, onAddToCart }) => {
       </Link>
 
       <div className="album-body">
-        <span className="album-catergory">{album.category}</span>
+        <span className="album-genre">{album.genre}</span>
         <h3 className="album-title">
           <Link to={`/album/${album.id}`}>{album.name}</Link>
         </h3>
