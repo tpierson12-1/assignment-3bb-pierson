@@ -35,7 +35,7 @@ const AlbumGenrePage = ({ albums, OnAddToCart }) => {
           <p className="detail-desc">{album.description}</p>
           <div className="stock-tag">
             {album.stock > 0
-              ? "✔️ In Stock ({album.stock} units available)"
+              ? `✔️ In Stock (${album.stock} units available)`
               : "Out of Stock"}
           </div>
         </div>
