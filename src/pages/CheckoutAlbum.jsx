@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const CheckoutPage = ({ cart, onClearCart }) => {
+const CheckoutAlbum = ({ cart, onClearCart }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // create the form data
